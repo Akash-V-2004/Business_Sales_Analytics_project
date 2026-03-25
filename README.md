@@ -1,37 +1,23 @@
-# SalesAnalysis_SQL_PowerBI
+# Business Sales Analysis (SQL & Power BI)
 
-### Setup
-- This project requires SQL Server (SQL Express), Power BI Desktop
-- We will work with backup Data Warehouse (DW) data and Lightweight (LT) data. Obtain data and restore following instructions from [here.](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms)
-- Compare DW and LT data to understand the difference between structured and unstructured data. We will primarily be working with Data Warehouse data.
-- Update Data Warehouse data using [sql script.](https://github.com/techtalkcorner/SampleDemoFiles/blob/master/Database/AdventureWorks/Update_AdventureWorksDW_Data.sql)
+## Overview
+This project focuses on analyzing business sales data using SQL and Power BI to gain meaningful insights into overall performance. The objective was to work with raw, unstructured data and transform it into a clear and interactive format that supports better decision-making. It highlights how data can be used to identify trends, measure growth, and understand customer and product behavior.
 
-### Business Request & User Stories
-- Read the sample business request, demand overview & filled-out user stories to understand the problem we are trying to solve with Data Analysis and what we consider as a solution.
+## Approach
+The project started with data preparation using SQL. This involved cleaning the dataset, handling missing or inconsistent values, and organizing the data into a structured format. Multiple tables were combined using joins, and queries were written to calculate key metrics such as total revenue, profit, and sales volume. Grouping and aggregation techniques were used to analyze data across different dimensions like time, region, and product categories.
 
-### Clean the Data using T-SQL
-- Understand the difference between FACT tables & Dimension tables.
-- Identify which tables in the data are of interest with the help of the Business Request form.
-- Choose which columns are of interest to export by preparing and transforming these columns in SQL using concepts such as: renaming columns, combining columns, commenting in SQL script, formatting of SQL statements, WHERE clause, ORDER BY, LEFT JOIN, CASE() function and ISNULL() function. 
+## Data Visualization
+After processing the data, Power BI was used to build interactive dashboards that present insights in a simple and visually appealing way. Various charts and visuals were created to show:
+- Sales trends over different time periods  
+- Performance comparison across regions and categories  
+- High-performing and low-performing products  
+- Overall business growth using KPI indicators  
 
-### Create Dashboard in Power BI
-- Load Data
-- Organize & Prepare Tables
-- Connect Tables for Data Model
-- Import Fact_Budget
-- Calculation Measures
-- Dashboard Design
-- Import Custom Visual
-- Measure Table
-- Pie Chart
-- Line Chart
-- Bar Charts
-- Map Graph
-- Top 10 Graphs
-- Gradient Bar Chart Color
-- Customer Details
-- Pivot Table
+Filters and slicers were added to make the dashboard dynamic, allowing users to explore the data based on their needs.
 
-### Dashboard
-- [Download the file](https://github.com/AsifRashid01/SalesAnalysis_SQL_PowerBI/blob/main/Sales%20Report.pbix) and open in Power BI Desktop for interactive viewing.
-- [See a screenshot](https://github.com/AsifRashid01/SalesAnalysis_SQL_PowerBI/blob/main/Sales%20Report.pdf) of the Dashboard in pdf.
+## Tools & Technologies
+- SQL for data extraction, cleaning, and analysis  
+- Power BI for visualization and dashboard creation  
+
+## Key Learnings
+Through this project, I gained hands-on experience in working with real-world data, writing efficient SQL queries, and designing dashboards that communicate insights clearly. It also helped me understand how data analysis can directly support business strategies and decision-making.
